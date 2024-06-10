@@ -1,4 +1,4 @@
-package com.generation.Controller;
+package com.generation.Farmacia.Controller;
 
 import java.util.List;
 import java.util.Optional;
@@ -18,13 +18,13 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.server.ResponseStatusException;
 
-import com.generation.Model.Categoria;
-import com.generation.Repository.CategoriaRepository;
+import com.generation.Farmacia.Model.Categoria;
+import com.generation.Farmacia.Repository.CategoriaRepository;
 
 import jakarta.validation.Valid;
 
 @RestController
-@RequestMapping("/Categoria")
+@RequestMapping("/categoria")
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 public class CategoriaController {
 	@Autowired
